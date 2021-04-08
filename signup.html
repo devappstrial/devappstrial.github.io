@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Signup</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="css/signup.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap" rel="stylesheet">
+        <style>
+            .wrapper { margin: 150px auto; }
+            h1 { text-align: center; }
+        </style>
+    </head>
+    
+    <body background="img/signup-bg.jpg">
+        <div class="signup-form">
+            <h1>Signup</h1>
+            <img src="img/user.png">
+            <form action="signup.php" method="post">
+                <input type="text" placeholder="Name" class="text" name="name" required>
+                <input type="date" id="dob" name="dob" class="date" required>
+                <input type="username" placeholder="Username" class="text" name="username" required>
+                <input type="email" placeholder="E-mail" class="text" name="email" required>
+                <input type="password" placeholder="Password" class="text" name="psw" required>
+                <input type="password" placeholder="Confirm Password" class="text" name="psw-repeat" required>
+                <!--p>To create an account you have to agree our <a href="#">Terms & Privacy</a>.</p>-->
+                <input type="submit" value="Create Account" class="btn" name="newuser">
+                <a href="login.html"> Already have an Account?</a>
+            </form>
+        </div>
+    </body>
+</html>
